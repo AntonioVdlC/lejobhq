@@ -1,0 +1,8 @@
+@import "./styles/vars.css";
+
+html, body {
+  margin: 0;
+  color: var(--color-black);
+  font-family: var(--font-family-secondary);
+  overflow-x: hidden;
+}

@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+  dir: 'parse-job-info'
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['test']
+  dir: 'parse-job-info'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - functions
+  - deploy
+  - parse-job-info
+  - --source=parse-job-info
+  - --entry-point=parseJobInfo
+  - --runtime=nodejs10
+  - --memory=1024MB
+  - --trigger-http

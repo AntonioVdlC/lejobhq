@@ -1,0 +1,145 @@
+:root {
+  --color-primary: #007777;
+  --color-primary-darker: #000d0d;
+  --color-primary-dark: #003636;
+  --color-primary-light: #34ABAB;
+  --color-primary-lighter: #7BCECE;
+  --color-primary-grey: #5D5D5D;
+
+  --color-secondary-1: #C6A300;
+  --color-secondary-1-darker: #161200;
+  --color-secondary-1-dark: #5A4A00;
+  --color-secondary-1-light: #FFDF4D;
+  --color-secondary-1-lighter: #FFED98;
+  --color-secondary-1-grey: #9E9E9E;
+
+  --color-secondary-2: #A00058;
+  --color-secondary-2-darker: #12000A;
+  --color-secondary-2-dark: #490028;
+  --color-secondary-2-light: #D74193;
+  --color-secondary-2-lighter: #E88ABD;
+  --color-secondary-2-grey: #282828;
+
+  --color-complementary: #c65a00;
+  --color-complementary-darker: #160A00;
+  --color-complementary-dark: #5A2900;
+  --color-complementary-light: #FF9D4D;
+  --color-complementary-lighter: #ffc798;
+  --color-complementary-grey: #6A6A6A;
+
+  --color-black: #000d0d;
+  --color-white: #ffffff;
+
+  --font-family-primary: Futura, "Open Sans", Verdana, sans-serif;
+  --font-family-secondary: Geneva, Helvetica, Tahoma, sans-serif;
+
+  --font-size-xs: 0.5rem;
+  --font-size-s: 0.75rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.5rem;
+  --font-size-xxxl: 4rem;
+
+  --header-height: 72px;
+  --footer-height: 72px;
+
+  --main-width: 88vw;
+  --main-max-width: 1024px;
+}
+
+@media(max-width: 888px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.75rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.25rem;
+    --font-size-xl: 1.75rem;
+    --font-size-xxl: 2.25rem;
+    --font-size-xxxl: 3.5rem;
+  }
+}
+
+@media(max-width: 777px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.7rem;
+    --font-size-m: 0.8rem;
+    --font-size-l: 1rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 2rem;
+    --font-size-xxxl: 3.5rem;
+  }
+}
+
+@media(max-width: 666px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.66rem;
+    --font-size-m: 0.75rem;
+    --font-size-l: 0.8rem;
+    --font-size-xl: 1.25rem;
+    --font-size-xxl: 2rem;
+    --font-size-xxxl: 3.5rem;
+
+    --header-height: 66px;
+    --footer-height: 66px;
+  }
+}
+
+@media(max-width: 555px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.55rem;
+    --font-size-m: 0.7rem;
+    --font-size-l: 0.75rem;
+    --font-size-xl: 1rem;
+    --font-size-xxl: 1.75rem;
+    --font-size-xxxl: 3rem;
+
+    --header-height: 55px;
+    --footer-height: 55px;
+  }
+}
+
+@media(max-width: 500px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.5rem;
+    --font-size-m: 0.6rem;
+    --font-size-l: 0.7rem;
+    --font-size-xl: 0.9rem;
+    --font-size-xxl: 1.5rem;
+    --font-size-xxxl: 2.5rem;
+  }
+}
+
+@media(max-width: 444px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.45rem;
+    --font-size-m: 0.55rem;
+    --font-size-l: 0.66rem;
+    --font-size-xl: 0.88rem;
+    --font-size-xxl: 1.25rem;
+    --font-size-xxxl: 2.25rem;
+
+    --header-height: 44px;
+    --footer-height: 44px;
+  }
+}
+
+@media(max-width: 375px) {
+  :root {
+    --font-size-xs: 0.4rem;
+    --font-size-s: 0.45rem;
+    --font-size-m: 0.5rem;
+    --font-size-l: 0.6rem;
+    --font-size-xl: 0.8rem;
+    --font-size-xxl: 1rem;
+    --font-size-xxxl: 2rem;
+
+    --header-height: 33px;
+    --footer-height: 33px;
+  }
+}

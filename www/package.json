@@ -1,0 +1,53 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "clean": "rm -rf dist && mkdir dist",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lejobhq/www.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lejobhq/www/issues"
+  },
+  "homepage": "https://github.com/lejobhq/www#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^1.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^2.7.0",
+    "lint-staged": "^8.2.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.5.0",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "preact": "^8.5.3"
+  }
+}
